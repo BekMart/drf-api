@@ -11,17 +11,17 @@ class Post(models.Model):
     image_filter_choices = [
         ('_1977', '1977'),
         ('brannan', 'Brannan'),
-        ('earlybird', 'Earlybird'), 
+        ('earlybird', 'Earlybird'),
         ('hudson', 'Hudson'),
-        ('inkwell', 'Inkwell'), 
+        ('inkwell', 'Inkwell'),
         ('lofi', 'Lo-Fi'),
-        ('kelvin', 'Kelvin'), 
+        ('kelvin', 'Kelvin'),
         ('normal', 'Normal'),
-        ('nashville', 'Nashville'), 
+        ('nashville', 'Nashville'),
         ('rise', 'Rise'),
-        ('toaster', 'Toaster'), 
+        ('toaster', 'Toaster'),
         ('valencia', 'Valencia'),
-        ('walden', 'Walden'), 
+        ('walden', 'Walden'),
         ('xpro2', 'X-pro II')
     ]
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
