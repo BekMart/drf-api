@@ -8,6 +8,7 @@ class Profile(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now_add=True)
     name = models.CharField(max_length=255, blank=True)
+    content = models.TextField(blank=True)
     image = models.ImageField(
         upload_to='images/', default='../default_profile_ngcscr'
     )
